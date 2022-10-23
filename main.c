@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void getWord(){
+int main()
+{
     int key = 0;
     char option, word[50];
 
@@ -33,11 +34,8 @@ void getWord(){
             break;
         default:
             printf("Opçao invalida.");
+            return 1;
     }
-}
 
-int main()
-{
-    getWord();
     return 0;
 }
