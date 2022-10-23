@@ -17,8 +17,7 @@ int main()
         scanf("%i", &key);
         printf("Digite uma palavra (maximo 50 letras):\n");
         scanf("%s", &word);
-        for (int i = 0; i < strlen(word); i++)
-        {
+        for (int i = 0; i < strlen(word); i++){
             char letter = word[i];
             option == '1' ? (letter = letter + key) : (letter = letter - key);
             printf("%c", letter);
